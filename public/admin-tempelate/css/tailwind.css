@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.containers{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    @apply
+    bg-slate-200
+}
+.containers > .box{
+    background-image: url('./../images/login-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100vw - 460px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    width: 460px;
+    height: 100vh;
+}
+.form-box{
+    @apply
+    w-full
+    h-auto
+    p-8
+    bg-white
+    rounded-md
+    shadow-md
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 48px;
+    margin-bottom: 24px;
+    @apply
+    border-2
+    border-slate-300
+    rounded-none
+}
+.form-group input{
+    @apply
+    w-[calc(300px_-_48px)]
+    px-3
+    py-4
+    bg-slate-50
+    
+}
+.form-group .icon-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+.form-box button{
+    @apply
+    w-full
+    px-6
+    py-2
+    rounded-md
+    bg-blue-600
+    text-white
+    text-base
+    font-medium
+}
+
